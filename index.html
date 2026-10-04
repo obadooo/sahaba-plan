@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>خطة قراءة «صور من حياة الصحابة»</title>
+<style>
+:root{--bg:#f2f5f3;--card:#fff;--ink:#14211f;--mute:#4b5d59;--line:#cdd8d4;--soft:#e4ebe8;--head:#0f3d3e;--head2:#1c5b5c;--brass:#b8893b;--note:#fbf3e2;--headtxt:#c9dcd8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1716;--card:#16231f;--ink:#e6efec;--mute:#9fb3ae;--line:#2b3d38;--soft:#1f302c;--head:#0a2b2c;--head2:#134344;--brass:#d6a65a;--note:#2b2415;--headtxt:#a9c4be}}
+:root[data-theme="dark"]{--bg:#0e1716;--card:#16231f;--ink:#e6efec;--mute:#9fb3ae;--line:#2b3d38;--soft:#1f302c;--head:#0a2b2c;--head2:#134344;--brass:#d6a65a;--note:#2b2415;--headtxt:#a9c4be}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Segoe UI",Tahoma,"Noto Sans Arabic",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+.serif{font-family:"Noto Naskh Arabic","Traditional Arabic","Amiri",Georgia,serif}
+.wrap{max-width:780px;margin:0 auto}
+header{background:var(--head);color:#fff;padding:30px 16px 24px}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+h1{font-size:1.9rem;line-height:1.35}
+header p{color:var(--headtxt);font-size:.92rem;margin-top:4px}
+#theme{background:var(--head2);color:#fff;border:0;border-radius:6px;padding:6px 10px;font:inherit;cursor:pointer}
+.stats{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
+.stat{background:var(--head2);border-radius:6px;padding:6px 12px}
+.stat b{display:block;font-size:1.25rem}.stat span{font-size:.78rem;color:var(--headtxt)}
+.bar{height:8px;background:var(--head2);border-radius:4px;overflow:hidden;margin-top:16px}
+.bar i{display:block;height:100%;width:0;background:var(--brass);transition:width .3s}
+#ptxt{font-size:.85rem;color:var(--headtxt);margin-top:5px}
+main{padding:16px 14px 50px}
+.next{background:var(--card);border:1px solid var(--brass);border-radius:8px;padding:12px 14px;margin-bottom:14px}
+.next b{font-size:1.05rem}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.tools label{font-size:.85rem;color:var(--mute);display:flex;gap:6px;align-items:center}
+input[type=search],input[type=date]{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink)}
+input[type=search]{flex:1;min-width:150px}
+.tabs{display:flex;gap:6px;margin-bottom:12px}
+.tabs button{flex:1;padding:9px;border:1px solid var(--line);background:var(--card);font:inherit;border-radius:6px;cursor:pointer;color:var(--ink)}
+.tabs button[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;margin-bottom:9px}
+details[open]{border-color:var(--head2)}
+details.now{border-width:2px;border-color:var(--brass)}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:11px 13px}
+summary::-webkit-details-marker{display:none}
+.num{width:40px;height:40px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-size:1.2rem;font-weight:700;color:var(--ink)}
+.done .num{background:var(--brass);color:#fff}
+.t1{font-weight:600}.t2{font-size:.84rem;color:var(--mute)}
+.badge{background:var(--brass);color:#fff;border-radius:10px;padding:0 8px;font-size:.75rem;margin-inline-start:6px}
+.pg{text-align:left;font-size:.84rem;color:var(--mute);white-space:nowrap}.pg b{display:block;font-size:1rem;color:var(--ink)}
+.body{padding:2px 13px 13px;border-top:1px solid var(--soft)}
+.st{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px dashed var(--line)}
+.st span:last-child{color:var(--mute);font-size:.88rem;white-space:nowrap}
+.st.hit{background:var(--note)}
+.chk{display:flex;gap:8px;align-items:center;margin-top:10px;font-size:.92rem;cursor:pointer}
+.chk input{width:18px;height:18px;accent-color:var(--head2)}
+.note{background:var(--note);border-inline-start:3px solid var(--brass);padding:7px 10px;margin-top:10px;font-size:.86rem;border-radius:4px}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);font-size:.88rem;min-width:520px}
+th,td{padding:8px 10px;text-align:right;border-bottom:1px solid var(--soft)}th{background:var(--soft)}
+td.c{text-align:center;white-space:nowrap}
+.hide{display:none}
+footer{font-size:.8rem;color:var(--mute);padding:0 14px 36px}
+@media print{header button,.tools,.tabs{display:none}details{break-inside:avoid}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="top"><div><h1 class="serif">خطة قراءة «صور من حياة الصحابة»</h1><p>د. عبد الرحمن رأفت الباشا · كل أسبوع ينتهي عند نهاية قصة صحابي</p></div><button id="theme" type="button" aria-label="تبديل الوضع">◐</button></div>
+<div class="stats"><div class="stat"><b class="serif">١٢</b><span>أسبوعًا</span></div><div class="stat"><b class="serif">٥٨</b><span>قصة</span></div><div class="stat"><b class="serif">٤٩٩</b><span>صفحة (٧ – ٥٠٥)</span></div></div>
+<div class="bar"><i id="fill"></i></div><div id="ptxt"></div>
+</div></header>
+<main><div class="wrap">
+<div class="next" id="next"></div>
+<div class="tools">
+<input type="search" id="q" placeholder="ابحث عن صحابي…" aria-label="بحث">
+<label>تاريخ بداية الأسبوع ١ <input type="date" id="start"></label>
+</div>
+<div class="tabs" role="tablist"><button role="tab" aria-selected="true" data-v="cards">بطاقات الأسابيع</button><button role="tab" aria-selected="false" data-v="table">جدول مختصر</button></div>
+<section id="cards"></section>
+<section id="table" class="hide tw"></section>
+</div></main>
+<footer><div class="wrap">الأرقام هي أرقام صفحات الكتاب المطبوعة وهي نفسها أرقام صفحات ملف PDF. مقدمة الكتاب (١–٦) والفهارس (بعد ٥٠٥) غير محسوبة. تُحفظ علاماتك وتاريخ البداية على جهازك فقط.</div></footer>
+<script>
+const PLAN=[{"w": 1, "from": 7, "to": 46, "n": 40, "stories": [{"name": "سعيد بن عامر الجمحي", "start": 7, "end": 14}, {"name": "الطفيل بن عمرو الدوسي", "start": 15, "end": 23}, {"name": "عبد الله بن حذافة السهمي", "start": 24, "end": 32}, {"name": "عمير بن وهب", "start": 33, "end": 39}, {"name": "البراء بن مالك الأنصاري", "start": 40, "end": 46}]}, {"w": 2, "from": 47, "to": 89, "n": 43, "stories": [{"name": "أم سلمة (أيّم العرب)", "start": 47, "end": 55}, {"name": "ثمامة بن أثال", "start": 56, "end": 63}, {"name": "أبو أيوب الأنصاري", "start": 64, "end": 72}, {"name": "عمرو بن الجموح", "start": 73, "end": 79}, {"name": "عبد الله بن جحش", "start": 80, "end": 89}]}, {"w": 3, "from": 90, "to": 131, "n": 42, "stories": [{"name": "أبو عبيدة بن الجراح", "start": 90, "end": 96}, {"name": "عبد الله بن مسعود", "start": 97, "end": 105}, {"name": "سلمان الفارسي", "start": 106, "end": 113}, {"name": "عكرمة بن أبي جهل", "start": 114, "end": 123}, {"name": "زيد الخير", "start": 124, "end": 131}]}, {"w": 4, "from": 132, "to": 173, "n": 42, "stories": [{"name": "عدي بن حاتم الطائي", "start": 132, "end": 139}, {"name": "أبو ذر الغفاري", "start": 140, "end": 147}, {"name": "عبد الله بن أم مكتوم", "start": 148, "end": 155}, {"name": "مجزأة بن ثور السدوسي", "start": 156, "end": 163}, {"name": "أسيد بن الحضير", "start": 164, "end": 173}]}, {"w": 5, "from": 174, "to": 213, "n": 40, "stories": [{"name": "عبد الله بن عباس", "start": 174, "end": 186}, {"name": "النعمان بن مقرن المزني", "start": 187, "end": 194}, {"name": "صهيب الرومي", "start": 195, "end": 202}, {"name": "أبو الدرداء", "start": 203, "end": 213}]}, {"w": 6, "from": 214, "to": 253, "n": 40, "stories": [{"name": "زيد بن حارثة", "start": 214, "end": 221}, {"name": "أسامة بن زيد", "start": 222, "end": 229}, {"name": "سعيد بن زيد", "start": 230, "end": 237}, {"name": "عمير بن سعد", "start": 238, "end": 253}]}, {"w": 7, "from": 254, "to": 292, "n": 39, "stories": [{"name": "عبد الرحمن بن عوف", "start": 254, "end": 261}, {"name": "جعفر بن أبي طالب", "start": 262, "end": 275}, {"name": "أبو سفيان بن الحارث", "start": 276, "end": 284}, {"name": "سعد بن أبي وقاص", "start": 285, "end": 292}]}, {"w": 8, "from": 293, "to": 332, "n": 40, "stories": [{"name": "حذيفة بن اليمان", "start": 293, "end": 300}, {"name": "عقبة بن عامر الجهني", "start": 301, "end": 307}, {"name": "حبيب بن زيد الأنصاري", "start": 308, "end": 315}, {"name": "أبو طلحة الأنصاري", "start": 316, "end": 323}, {"name": "رملة بنت أبي سفيان (أم حبيبة)", "start": 324, "end": 332}]}, {"w": 9, "from": 333, "to": 376, "n": 44, "stories": [{"name": "وحشي بن حرب", "start": 333, "end": 340}, {"name": "حكيم بن حزام", "start": 341, "end": 347}, {"name": "عباد بن بشر", "start": 348, "end": 353}, {"name": "زيد بن ثابت", "start": 354, "end": 360}, {"name": "ربيعة بن كعب", "start": 361, "end": 369}, {"name": "أبو العاص بن الربيع", "start": 370, "end": 376}]}, {"w": 10, "from": 377, "to": 418, "n": 42, "stories": [{"name": "عاصم بن ثابت", "start": 377, "end": 383}, {"name": "صفية بنت عبد المطلب", "start": 384, "end": 391}, {"name": "عتبة بن غزوان", "start": 392, "end": 399}, {"name": "نعيم بن مسعود", "start": 400, "end": 410}, {"name": "خباب بن الأرت", "start": 411, "end": 418}]}, {"w": 11, "from": 419, "to": 462, "n": 44, "stories": [{"name": "الربيع بن زياد الحارثي", "start": 419, "end": 427}, {"name": "عبد الله بن سلام", "start": 428, "end": 437}, {"name": "سراقة بن مالك", "start": 438, "end": 447}, {"name": "فيروز الديلمي", "start": 448, "end": 455}, {"name": "ثابت بن قيس الأنصاري", "start": 456, "end": 462}]}, {"w": 12, "from": 463, "to": 505, "n": 43, "stories": [{"name": "أسماء بنت أبي بكر", "start": 463, "end": 470}, {"name": "طلحة بن عبيد الله", "start": 471, "end": 478}, {"name": "أبو هريرة الدوسي", "start": 479, "end": 488}, {"name": "سلمة بن قيس الأشجعي", "start": 489, "end": 496}, {"name": "معاذ بن جبل", "start": 497, "end": 505}]}];
+const AR=n=>String(n).replace(/\d/g,d=>"٠١٢٣٤٥٦٧٨٩"[d]);
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+let done=new Set(JSON.parse(store.get("done")||"[]"));
+let start=store.get("start")||"";
+const fmt=d=>d.toLocaleDateString("ar",{day:"numeric",month:"long"});
+const addDays=(d,n)=>{const x=new Date(d);x.setDate(x.getDate()+n);return x};
+const range=w=>{if(!start)return"";const s=addDays(new Date(start+"T00:00"),(w-1)*7);return fmt(s)+" – "+fmt(addDays(s,6))};
+const curWeek=()=>{if(!start)return 0;const k=Math.floor((new Date()-new Date(start+"T00:00"))/6048e5)+1;return k>=1&&k<=12?k:0};
+const cards=document.getElementById("cards"),tbl=document.getElementById("table");
+function build(){
+  const now=curWeek(),q=document.getElementById("q").value.trim();
+  cards.innerHTML="";
+  PLAN.forEach(w=>{
+    const hits=q?w.stories.filter(s=>s.name.includes(q)):[];
+    if(q&&!hits.length)return;
+    const f=w.stories[0].name,l=w.stories[w.stories.length-1].name;
+    const d=document.createElement("details");d.id="w"+w.w;
+    if(done.has(w.w))d.classList.add("done");
+    if(w.w===now){d.classList.add("now");d.open=true}
+    if(q)d.open=true;
+    const dt=range(w.w);
+    const note=w.n<40?'<div class="note">هذا الأسبوع '+AR(w.n)+' صفحة فقط؛ لأن أقرب نهاية قصة بعده تجعله ٤٧ صفحة.</div>':"";
+    d.innerHTML=`<summary><span class="num serif">${AR(w.w)}</span><span><span class="t1">${f}${w.stories.length>1?" ← "+l:""}${w.w===now?'<span class="badge">هذا الأسبوع</span>':""}</span><br><span class="t2">${AR(w.stories.length)} قصص${dt?" · "+dt:""}</span></span><span class="pg"><b>${AR(w.n)} صفحة</b>${AR(w.from)} – ${AR(w.to)}</span></summary><div class="body">${w.stories.map(s=>`<div class="st${hits.includes(s)?" hit":""}"><span>${s.name}</span><span>${AR(s.start)} – ${AR(s.end)}</span></div>`).join("")}${note}<label class="chk"><input type="checkbox" data-w="${w.w}"${done.has(w.w)?" checked":""}> تمّت قراءة هذا الأسبوع</label></div>`;
+    cards.appendChild(d);
+  });
+  if(!cards.children.length)cards.innerHTML='<p class="t2">لا توجد نتائج مطابقة.</p>';
+  tbl.innerHTML="<table><thead><tr><th>الأسبوع</th><th>التاريخ</th><th>من – إلى</th><th>الصفحات</th><th>أول قصة</th><th>آخر قصة</th></tr></thead><tbody>"+PLAN.map(w=>`<tr><td class="c">${AR(w.w)}</td><td class="c">${range(w.w)||"—"}</td><td class="c">${AR(w.from)} – ${AR(w.to)}</td><td class="c">${AR(w.n)}</td><td>${w.stories[0].name}</td><td>${w.stories[w.stories.length-1].name}</td></tr>`).join("")+"</tbody></table>";
+}
+function stats(){
+  const pages=PLAN.filter(w=>done.has(w.w)).reduce((a,w)=>a+w.n,0);
+  document.getElementById("fill").style.width=(pages/499*100)+"%";
+  document.getElementById("ptxt").textContent="أنجزت "+AR(done.size)+" من ١٢ أسبوعًا ("+AR(pages)+" صفحة)";
+  const n=PLAN.find(w=>!done.has(w.w)),el=document.getElementById("next");
+  el.innerHTML=n?`المطلوب الآن: <b>الأسبوع ${AR(n.w)}</b> · صفحات ${AR(n.from)} – ${AR(n.to)} (${AR(n.n)} صفحة)${range(n.w)?"<br><span class=t2>"+range(n.w)+"</span>":""}`:"<b>أتممت الكتاب كاملًا، بارك الله فيك.</b>";
+}
+cards.addEventListener("change",e=>{const w=+e.target.dataset.w;e.target.checked?done.add(w):done.delete(w);store.set("done",JSON.stringify([...done]));e.target.closest("details").classList.toggle("done",e.target.checked);stats()});
+document.getElementById("q").addEventListener("input",build);
+const si=document.getElementById("start");si.value=start;
+si.addEventListener("change",()=>{start=si.value;store.set("start",start);build();stats()});
+document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-selected",x===b));cards.classList.toggle("hide",b.dataset.v!=="cards");tbl.classList.toggle("hide",b.dataset.v!=="table")});
+document.getElementById("theme").onclick=()=>{const r=document.documentElement,dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=dark?"light":"dark";store.set("theme",r.dataset.theme)};
+const th=store.get("theme");if(th)document.documentElement.dataset.theme=th;
+build();stats();
+</script>
+</body></html>
